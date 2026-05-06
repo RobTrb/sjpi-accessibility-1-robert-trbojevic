@@ -26,60 +26,72 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
 -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A11y News shares short stories about science, culture, and community events.">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A11y News shares short stories about science, culture, and community events."
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>A11y News</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="site-header">
-        <nav class="navigation" aria-label="Primary navigation">
-            <a class="nav-item" href="#home" aria-current="page">Home</a>
-            <a class="nav-item" href="#science">Science</a>
-            <a class="nav-item" href="#culture">Culture</a>
-            <a class="nav-item" href="#contact">Contact</a>
-        </nav>
+      <nav class="navigation" aria-label="Primary navigation">
+        <a class="nav-item" href="#home" aria-current="page">Home</a>
+        <a class="nav-item" href="#science">Science</a>
+        <a class="nav-item" href="#culture">Culture</a>
+        <a class="nav-item" href="#contact">Contact</a>
+      </nav>
     </header>
 
     <main class="container" id="main-content">
-        <section class="page-intro" id="home">
-            <h1>A11y News</h1>
+      <section class="page-intro" id="home">
+        <h1>A11y News</h1>
 
-            <form class="input-container" role="search" action="#science">
-                <label for="site-search">Search news</label>
-                <div class="search-row">
-                    <input id="site-search" name="q" type="search" placeholder="Enter text">
-                    <button type="submit">Search</button>
-                </div>
-            </form>
-        </section>
+        <form class="input-container" role="search" action="#science">
+          <label for="site-search">Search news</label>
+          <div class="search-row">
+            <input
+              id="site-search"
+              name="q"
+              type="search"
+              placeholder="Enter text"
+            />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+      </section>
 
-        <article class="article" id="science">
-            <h2 class="headline">New deep-sea fish discovered</h2>
-            <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
-                unnamed species is believed to have unique traits that could contribute to future medical research and
-                biotechnology.</p>
-            <a href="#science">Read more about the deep-sea fish discovery</a>
-        </article>
+      <article class="article" id="science">
+        <h2 class="headline">New deep-sea fish discovered</h2>
+        <p>
+          Scientists have discovered a new deep-sea fish with bioluminescent
+          fins off the coast of Australia. The unnamed species is believed to
+          have unique traits that could contribute to future medical research
+          and biotechnology.
+        </p>
+        <a href="#science">Read more about the deep-sea fish discovery</a>
+      </article>
 
-        <article class="article" id="culture">
-            <h2>Lunar New Year: Celebrate with us!</h2>
-            <a href="#culture">Read more about Lunar New Year celebrations</a>
-        </article>
+      <article class="article" id="culture">
+        <h2>Lunar New Year: Celebrate with us!</h2>
+        <a href="#culture">Read more about Lunar New Year celebrations</a>
+      </article>
 
-        <section class="contact" id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact A11y News</h2>
-            <p>Email the newsroom at <a href="mailto:news@example.com">news@example.com</a>.</p>
-        </section>
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact A11y News</h2>
+        <p>
+          Email the newsroom at
+          <a href="mailto:news@example.com">news@example.com</a>.
+        </p>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
